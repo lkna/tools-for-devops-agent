@@ -10,7 +10,9 @@ name: Validate skills
 #
 # NOTE: a red check does not block merging on its own. An admin must add the
 # job's name ("validate-skills") to the required status checks for `main` in
-# branch protection. Until then this workflow is advisory.
+# branch protection. Until then this workflow is advisory. Use "Require branches
+# to be up to date before merging" with it rather than a merge queue: the
+# workflow doesn't run on merge_group events.
 
 on:
   pull_request:
